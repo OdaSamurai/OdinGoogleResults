@@ -1,0 +1,82 @@
+/*Main Search Bar on Top*/
+.headerBar {
+    display: grid;
+    grid-template-columns: auto auto 920px auto auto;
+    top: 5px;
+    margin: 12px;
+    justify-content: left;
+    position: fixed;
+    width: 98%;
+    align-items: center;
+}
+/*End of Main Search Bar on Top*/
+
+/*Right-Side Header Buttons*/
+.loginBtn {
+    background: #4285f4;
+    border: none;
+    font-size: 13px;
+    padding: 0 10px;
+    border: #4285f4 solid;
+    border-radius: 2px;
+    font-family: Arial, sans-serif;
+    color: #FFF;
+    line-height: 24px;
+    font-weight: bold;
+    height: 30px;
+}
+.gglApps {
+    margin-right: 10px;
+    background-image: url(https://i.imgur.com/OZxFvxD.png);
+    height: 40px; 
+    width: 40px;
+    cursor: pointer;
+    background-size: contain;
+    border-radius: 50%;
+}
+.gglApps:hover {
+    background-image: url(https://i.imgur.com/HC3fSS5.png);
+    cursor: pointer;
+}
+/*End of Right-Side Header Buttons*/
+
+
+/* Main Google Searchbox */
+.mainSearchBox {
+    border-radius: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DDD;
+    padding-left: 25px;
+    height: 40px;
+    width: 33vw;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+}
+
+.mainSearchBox:hover{
+    box-shadow: 0 0 0 2pt rgba(100, 100, 100, 0.1);
+    outline: none;
+}
+
+.mainSearchBox:focus{
+    box-shadow: 0 0 0 2pt rgba(100, 100, 100, 0.1);
+    outline: none;
+}
+/*End of Main Google Searchbox*/
+
+/*Search Type Bar*/
+.searchTypeBar {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    margin-top: 80px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    padding-left: 150px;
+    margin-left: -9px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #EEE;
+    width: 100%;
+}
+/*End of Search Type Bar*/
