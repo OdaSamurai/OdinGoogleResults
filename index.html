@@ -9,33 +9,67 @@
 <body>
 <!--Top Search Bar-->
 <div class="headerBar">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="92px" height="30px" style="margin-right:25px" alt="Google Logo"> <!--Google Logo-->
-        <input class="mainSearchBox" type="text" size="60vw;" value="build this webpage"> <!--Search Box-->
-    <div>
-    </div>
-        <a href="https://www.google.com.br/intl/pt-BR/about/products?tab=wh"><div class="gglApps"></div></a> <!--Google Apps Button-->
-    <div> 
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" width="92px" height="30px" style="margin-right:25px; padding-right: 10px; padding-bottom: 25px;" alt="Google Logo"> <!--Google Logo-->
+        <div class="acessiMenu">
+            <input type="text" value="build this webpage"><!--Search Box-->
+            <svg class="acessiMenuItm" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#4285f4"></path></svg>
+            <img class="acessiMenuMic" style="right: 30px;" src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png">
+            <img class="acessiMenuTec" style="right: 50px; top: -30px; height: 11px; width: 19px;" src="https://i.imgur.com/33G2mIt.png" aria-label="Ferramentas de Teste">
+            <div class="tooltipTec" style="width: 160px; height: 15px;">Ferramentas de inserção de texto</div>
+            <div class="tooltipMic" style="width: 8 0px; height: 15px;">Pesquisa por voz</div>
+        </div>
         <a href="https://accounts.google.com/ServiceLogin?hl=pt-BR&passive=true&continue=https://www.google.com.br/"><button class="loginBtn">Fazer login</button></a> <!--Gmail Login Button-->
+        <a href="https://www.google.com.br/intl/pt-BR/about/products?tab=wh"><div class="gglApps"></div></a> <!--Google Apps Button-->
     </div>
-</div>
 <!--End Top Search Bar-->
 
+
+<!-- Searchbar By Type -->
 <div class="searchTypeBar">
-    <span style="margin-left: 15px; height: 16px; margin-right: -25px;">
-        <svg focusable="false" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8z" fill="#34A853"></path><path d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6z" fill="#EA4335"></path><path d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6z" fill="#FBBC04"></path><path d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59z" fill="#4285F4"></path>
-        </svg>
-    </span>
-    <span> 
-        Todas
+    
+    <span class="boxDeco" style="margin-left: 5px; padding-left: 10px; border-bottom: 3px solid #4285f4;">
+        <svg class="icoImgs" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8z" fill="#34A853"></path><path d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6z" fill="#EA4335"></path><path d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6z" fill="#FBBC04"></path><path d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59z" fill="#4285F4"></path>
+        </svg> 
+        <a style="text-decoration: none; color: #1A73E8;" href="">Todas</a>
+    </span>    
+    
+    <span class="boxDeco" style="padding-left: 15px;">
+        <svg class="icoImgs" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2z" fill="#5f6368"></path></svg>
+        <a class="searchTypeBarText" href="https://www.google.com/search?q=build+this+webpage&safe=off&sxsrf=ALeKk00nNvRVH_p3sv7XDgFP-l0hWX0HCQ:1583775884309&source=lnms&tbm=nws&sa=X&ved=2ahUKEwiUvfP3-I3oAhUiHLkGHQX5CLgQ_AUoAXoECA0QAw"> Noticias </a>
     </span>
     
-    <span>Notícias</span>
-    <span>Maps</span>
-    <span>Vídeos</span>
-    <span>Shopping</span>
-    <span>Mais</span>
-    <span>Configurações</span>
-    <span style="margin-right: 1200px;">Ferramentas</span>
+    <span class="boxDeco">
+        <svg class="icoImgs" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12.01" cy="9.32" r="1.93" fill="#5f6368"></circle><path d="M11.98,21.85c0.01,0,0.01,0,0.02,0s0.01,0,0.02,0c0.67,0,0.89-0.48,1.14-1.09 c0.26-0.59,0.75-1.71,1.29-2.53c0.57-0.85,1.16-1.58,1.75-2.29c1.52-1.87,2.96-3.62,2.96-6.65c0.02-3.94-3.19-7.15-7.14-7.15 c-0.01,0-0.01,0-0.02,0s-0.01,0-0.02,0c-3.95,0-7.15,3.21-7.15,7.15c0,3.03,1.44,4.8,2.96,6.65c0.58,0.71,1.17,1.44,1.75,2.29 c0.54,0.82,1.04,1.93,1.29,2.53C11.1,21.37,11.31,21.85,11.98,21.85z M9.35,14.69C7.88,12.9,6.83,11.62,6.83,9.3 c0-2.84,2.31-5.15,5.15-5.15c0.01,0,0.01,0,0.02,0s0.01,0,0.02,0c2.84,0,5.15,2.31,5.15,5.15c0.01,2.32-1.04,3.61-2.5,5.39 c-0.58,0.71-1.24,1.52-1.87,2.45c-0.3,0.44-0.56,0.94-0.8,1.4c-0.24-0.46-0.5-0.97-0.8-1.4C10.59,16.2,9.93,15.4,9.35,14.69z" fill="#5f6368"></path></svg>
+        <a class="searchTypeBarText" href="https://www.google.com/maps?q=build+this+webpage&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiUvfP3-I3oAhUiHLkGHQX5CLgQ_AUoAnoECA0QBA">Maps</a>
+    </span>
+    
+    <span class="boxDeco">
+        <svg class="icoImgs" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5z" fill-rule="evenodd" fill="#5f6368"></path></svg>
+        <a class="searchTypeBarText" href="https://www.google.com/search?q=build+this+webpage&safe=off&sxsrf=ALeKk00nNvRVH_p3sv7XDgFP-l0hWX0HCQ:1583775884309&source=lnms&tbm=vid&sa=X&ved=2ahUKEwiUvfP3-I3oAhUiHLkGHQX5CLgQ_AUoA3oECA0QBQ">Vídeos</a>
+    </span>
+    
+    <span class="boxDeco">
+        <svg class="icoImgs" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.11 2.89A3.02 3.02 0 0 0 18.95 2h-5.8c-.81 0-1.58.31-2.16.89L7.25 6.63 2.9 10.98a3.06 3.06 0 0 0 0 4.32l5.79 5.8a3.05 3.05 0 0 0 4.32.01l8.09-8.1c.58-.58.9-1.34.9-2.16v-5.8c0-.81-.32-1.59-.89-2.16zM20 10.85c0 .28-.12.54-.32.74l-3.73 3.74-4.36 4.36c-.41.41-1.08.41-1.49 0l-2.89-2.9-2.9-2.9a1.06 1.06 0 0 1 0-1.49l8.1-8.1c.2-.2.46-.3.74-.3l5.8-.01A1.05 1.05 0 0 1 20 5.05v5.8zM16 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" fill="#5f6368"></path></svg>
+        <a class="searchTypeBarText" href="https://www.google.com/search?q=build+this+webpage&safe=off&sxsrf=ALeKk00nNvRVH_p3sv7XDgFP-l0hWX0HCQ:1583775884309&source=lnms&tbm=shop&sa=X&ved=2ahUKEwiUvfP3-I3oAhUiHLkGHQX5CLgQ_AUoBHoECA0QBg">Shopping</a>
+    </span>
+    
+    <span class="boxDeco">
+        <svg class="icoImgs" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="#5f6368"></path></svg>
+        <a class="searchTypeBarText" href="">Mais</a>
+    </span>
+    
+    <span class="boxDeco">
+        <a class="searchTypeBarText" href="https://www.google.com/preferences">Configurações</a>
+    </span>
+    
+    <span class="boxDeco" style="margin-right: 1200px;">
+        Ferramentas
+    </span>
 </div>
+/* End of Searchbar By Type */
 
+/* Start of main results body */
+
+
+/* End of main results body */
 </body>

@@ -1,58 +1,121 @@
 /*Main Search Bar on Top*/
 .headerBar {
-    display: grid;
-    grid-template-columns: auto auto 920px auto auto;
-    top: 5px;
+    display: flex;
+    align-items: center;
+    top: 7px;
     margin: 12px;
-    justify-content: left;
     position: fixed;
     width: 98%;
-    align-items: center;
 }
 /*End of Main Search Bar on Top*/
 
-/*Right-Side Header Buttons*/
-.loginBtn {
-    background: #4285f4;
-    border: none;
-    font-size: 13px;
-    padding: 0 10px;
-    border: #4285f4 solid;
-    border-radius: 2px;
-    font-family: Arial, sans-serif;
-    color: #FFF;
-    line-height: 24px;
-    font-weight: bold;
-    height: 30px;
-}
-.gglApps {
-    margin-right: 10px;
-    background-image: url(https://i.imgur.com/OZxFvxD.png);
-    height: 40px; 
-    width: 40px;
-    cursor: pointer;
-    background-size: contain;
-    border-radius: 50%;
-}
-.gglApps:hover {
-    background-image: url(https://i.imgur.com/HC3fSS5.png);
-    cursor: pointer;
-}
-/*End of Right-Side Header Buttons*/
-
+/* Google Logo is just a img on the html, no class */
 
 /* Main Google Searchbox */
-.mainSearchBox {
-    border-radius: 30px;
+
+/* Acessibility Itens inside searchbar */
+
+.acessiMenu input {
+    border-radius: 30px;  
     border-width: 1px;
     border-style: solid;
     border-color: #DDD;
-    padding-left: 25px;
-    height: 40px;
-    width: 33vw;
+    padding-left: 20px;
+    height: 48px;
+    width: 34vw;
     font-size: 16px;
     font-family: arial, sans-serif;
+    display: block;
+    box-sizing: border-box;
 }
+
+/* Magnifying Glass */
+
+.acessiMenuItm{
+    position: relative; 
+    top: -35px; 
+    right: 17px;
+    float: right;
+    height: 24px;
+}
+
+.acessiMenuItm:hover {
+    cursor: pointer;
+}
+
+/* End of Magnifying Glass */
+
+/* Microphone */
+
+.acessiMenuMic{
+    position: relative; 
+    top: -35px; 
+    right: 17px;
+    float: right;
+    height: 24px;
+}
+
+.acessiMenuMic:hover {
+    cursor: pointer;
+}
+
+.acessiMenuMic:hover ~ .tooltipMic {
+    visibility: visible;
+}
+
+/* End of Microphone */
+
+/* Keyboard */
+
+.acessiMenuTec{
+    position: relative; 
+    top: -35px; 
+    right: 17px;
+    float: right;
+    height: 24px;
+}
+
+.acessiMenuTec:hover {
+    cursor: pointer;
+}
+
+.acessiMenuTec:hover ~ .tooltipTec {
+    visibility: visible;
+}
+
+/* End of Keyboard */
+
+/* Tooltips that display when hovering itens */
+
+.tooltipTec {
+    background: rgb(45, 45, 45); 
+    border: 1px solid rgb(255, 255, 255); 
+    color: rgb(255, 255, 255); 
+    display: block; 
+    font-size: 11px; 
+    font-weight: bold; 
+    height: 29px;
+    visibility: hidden;
+    position: absolute;
+    left: 30.5vw;
+}
+
+.tooltipMic {
+    background: rgb(45, 45, 45); 
+    border: 1px solid rgb(255, 255, 255); 
+    color: rgb(255, 255, 255); 
+    display: block; 
+    font-size: 11px; 
+    font-weight: bold; 
+    height: 29px;
+    visibility: hidden;
+    position: absolute;
+    left: 35.2vw;
+}
+
+/* End of Tooltips */
+
+/* End of the Acessibility elements inside the searcbar */
 
 .mainSearchBox:hover{
     box-shadow: 0 0 0 2pt rgba(100, 100, 100, 0.1);
@@ -65,18 +128,71 @@
 }
 /*End of Main Google Searchbox*/
 
+/*Right-Side Header Buttons*/
+.gglApps {
+    margin-right: 10px;
+    background-image: url(https://i.imgur.com/OZxFvxD.png);
+    height: 40px; 
+    width: 40px;
+    cursor: pointer;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 95px;
+}
+.gglApps:hover {
+    background-image: url(https://i.imgur.com/HC3fSS5.png);
+    cursor: pointer;
+}
+
+.loginBtn {
+    background: #4285f4;
+    border: none;
+    font-size: 13px;
+    padding: 0 10px;
+    border: #4285f4 solid;
+    border-radius: 2px;
+    font-family: Arial, sans-serif;
+    color: #FFF;
+    line-height: 24px;
+    font-weight: bold;
+    height: 30px;
+    position: absolute;
+    top: 4px;
+    right: 0px;
+}
+
+/*End of Right-Side Header Buttons*/
+
 /*Search Type Bar*/
 .searchTypeBar {
     font-family: arial, sans-serif;
     font-size: 13px;
-    margin-top: 80px;
+    margin-top: 82px;
     position: absolute;
     display: grid;
-    grid-template-columns: repeat(9, auto);
+    grid-template-columns: 80px 105px 75px 80px 95px 60px 100px 80px;
     padding-left: 150px;
     margin-left: -9px;
-    padding-bottom: 15px;
     border-bottom: solid 1px #EEE;
     width: 100%;
+    color: #5f6368;
+    height: 30px;
 }
+
+.icoImgs {
+    vertical-align: bottom;
+    height: 16px;
+}
+
+.searchTypeBarText {
+    text-decoration: none;
+    color: inherit;
+}
+
+.searchTypeBarText:hover {
+    color: #1A73E8;
+}
+
 /*End of Search Type Bar*/
