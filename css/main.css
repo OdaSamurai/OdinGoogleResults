@@ -1,11 +1,15 @@
+/* Style Start */
+
 /*Main Search Bar on Top*/
 .headerBar {
     display: flex;
-    align-items: center;
-    top: 7px;
-    margin: 12px;
+    top: 0px;
+    padding-top: 15px;
+    margin-left: 12px;
     position: fixed;
     width: 98%;
+    height: 60px;
+    background-color: white;
 }
 /*End of Main Search Bar on Top*/
 
@@ -128,6 +132,7 @@
 }
 /*End of Main Google Searchbox*/
 
+
 /*Right-Side Header Buttons*/
 .gglApps {
     margin-right: 10px;
@@ -138,7 +143,7 @@
     background-size: contain;
     border-radius: 50%;
     position: absolute;
-    top: 0;
+    top: 12px;
     right: 95px;
 }
 .gglApps:hover {
@@ -159,11 +164,12 @@
     font-weight: bold;
     height: 30px;
     position: absolute;
-    top: 4px;
+    top: 15px;
     right: 0px;
 }
 
 /*End of Right-Side Header Buttons*/
+
 
 /*Search Type Bar*/
 .searchTypeBar {
@@ -176,9 +182,10 @@
     padding-left: 150px;
     margin-left: -9px;
     border-bottom: solid 1px #EEE;
-    width: 100%;
+    width: 92%;
     color: #5f6368;
     height: 30px;
+    z-index: -1900;
 }
 
 .icoImgs {
@@ -196,3 +203,196 @@
 }
 
 /*End of Search Type Bar*/
+
+
+/* Main results body */
+
+.resultBox {
+    margin-top: 50px;
+}
+
+.btnDown {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;  
+  border-top: 5px solid #000;
+  padding-bottom: 5px;
+  margin-left: 15px;
+}
+
+.resultheader img {
+    width: 13px;
+    height: 14px;
+    margin: 0 0 -4px 8px;
+    cursor: pointer;
+}
+
+.resultheader a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.resultTitle {
+    margin-top: 8px;
+    font-size: 20px;
+    
+}
+
+.resultTitle a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+.resultDescript {
+    margin-top: 5px;
+    color: #70757a;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    width: 600px;
+    line-height: 1.58;
+}
+
+.resultDescript em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Video Results */
+
+.videoGrid {
+    display: grid;
+    grid-template-columns: 215px 215px;
+    grid-template-rows: auto;
+    margin: 0 0 0 -10px;
+}
+
+.videoColumn {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: -20px;
+}
+
+.videoThumb:hover {
+    cursor: pointer;
+}
+
+.videoThumb:hover ~.videoTitle {
+    text-decoration: underline;
+}
+
+.videoTitle {
+    margin: 15px 15px 50px 10px;
+    font-size: 16px;
+    width: 170px;
+    line-height: 1.37;
+}
+.videoTitle a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+.videoTitle:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.chanelName {
+    color: #808080;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.videoDate {
+    color: #808080;
+    font-size: 14px;
+    margin: 10px 0 0 10px;
+}
+
+/* End of Video Results */
+
+/* Related footer */
+
+.relatedFoot {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.relatedFootResults {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: repeat(4, 25px);
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.relatedFootResults a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+.relatedFootResults span {
+    font-weight: bold;
+}
+/* End of Main results body */
+
+/* Page Selector */
+
+.pageSelector {
+    margin: 28px 0 -20px 150px;
+}
+
+.pageSelector a {
+    text-decoration: none;
+    color: #4285f4;
+    font-size: 14px;
+    margin-right: 7px;
+}
+
+.pageSelector a:hover {
+    text-decoration: underline;
+}
+
+/* Location Footer */
+.footer {
+    width: 90vw;
+    background-color: #f2f2f2;;
+    border-top: 1px solid #e4e4e4;
+    height: 29px;
+    padding-left: 163px;
+    padding-top: 11px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: rgba(0,0,0,.54);
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+}
+
+.footerCountry {
+    display: grid;
+    grid-template-columns: 50px 1500px;
+    grid-template-rows: 25px;
+}
+
+.footerCountry a {
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+}
+
+.footerCity {
+    display: flex;    
+}
+
+.footerBall {
+    height: 0px;
+    width: 0px;
+    border: 5px solid rgba(0,0,0,.34);
+    border-radius: 50%;
+    margin: 4px 0 0 15px;
+}
+
+/* Footer end */
+
+/* Style end */
